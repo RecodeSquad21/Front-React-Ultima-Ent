@@ -5,7 +5,7 @@ import logo from "../../assets/img/logo.png";
 export default function Navbar() {
     return (
         <div>
-            <nav className="navbar navbar-expand-lg bg-white">
+            <nav className="navbar navbar-expand-lg bg-white container">
                 <div className="container-fluid">
                     <a className="navbar-brand" href="index.html"><img src={logo} alt="logo" /></a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
