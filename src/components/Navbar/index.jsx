@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import logo from "../../assets/img/logo.png";
 
 
@@ -7,7 +8,7 @@ export default function Navbar() {
         <div>
             <nav className="navbar navbar-expand-lg bg-white container">
                 <div className="container-fluid">
-                    <a className="navbar-brand" href="index.html"><img src={logo} alt="logo" /></a>
+                    <Link className="navbar-brand" to="/"><img src={logo} alt="logo" /></Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
                         aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
@@ -15,16 +16,16 @@ export default function Navbar() {
                     <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                                <Link className="nav-link" to="/">Inicio</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="voluntariado.html">Voluntariado</a>
+                                <Link className="nav-link" to="/voluntariado">Voluntariado</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="projetos.html">Projetos</a>
+                                <Link className="nav-link" to="/projetos">Projetos</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="contato.html">Contato</a>
+                                <Link className="nav-link" to="/contato">Contato</Link>
                             </li>
                         </ul>
                     </div>
